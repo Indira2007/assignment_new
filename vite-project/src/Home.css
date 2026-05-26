@@ -1,0 +1,50 @@
+h2 {
+  margin: 0 0 8px;
+  color: #242830;
+  font-size: 26px;
+  font-weight: 700;
+
+}
+
+p {
+  margin: 0;
+  color: #8a8f98;
+  font-size: 15px;
+  font-weight: 400;
+  
+  
+}
+
+p:last-of-type {
+  margin-bottom: 22px;
+}
+
+button {
+  width: 100%;
+  min-height: 42px;
+  margin: 0;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #642af5;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button + button {
+  margin-top: 10px;
+  color: #2b2d33;
+  background: #c9b8f5;
+}
+
+.home{
+  min-width:350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  padding: 0 26px 32px;
+  background: #f7f8fa;
+}

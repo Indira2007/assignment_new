@@ -1,0 +1,139 @@
+.page-shell {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.account-card {
+  width: min(100%, 438px);
+  min-height: 100svh;
+  background: #f7f8fa;
+}
+
+.account-header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(21, 25, 31, 0.06);
+}
+
+.account-header h2 {
+  margin: 0;
+  color: #22252b;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.account-body {
+  min-height: calc(100svh - 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.account-details {
+  padding-top: 36px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 22px;
+}
+
+.image-box {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.image-box img {
+  width: 88px;
+  height: 88px;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera-icon {
+  position: absolute;
+  right: -4px;
+  bottom: 4px;
+  width: 30px;
+  height: 26px;
+  border: 2px solid #f7f8fa;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background: #6b32ff;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.profile-info h3 {
+  margin: 0 0 8px;
+  color: #20232a;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.profile-info p {
+  margin: 0;
+  color: #20232a;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.description {
+  padding: 34px 22px 22px;
+}
+
+.description p {
+  max-width: 398px;
+  margin: 0;
+  color: #252a31;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  text-transform: capitalize;
+}
+
+.dashed-line,
+.bottom-line {
+  border-bottom: 2px dashed #d8d8d8;
+}
+
+.bottom-line {
+  margin-bottom: 28px;
+}
+
+@media (max-width: 480px) {
+  .account-card {
+    width: 100%;
+  }
+
+  .account-header {
+    min-height: 68px;
+  }
+
+  .account-header h2 {
+    font-size: 20px;
+  }
+
+  .account-details {
+    padding-top: 30px;
+  }
+
+  .profile-section,
+  .description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
